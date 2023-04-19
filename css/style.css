@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(150, 153, 150);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 550px;
+    background-color: rgb(233, 233, 204);
+    width: 500px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 35px 35px 0 35px;
+}
+
+
+.container header{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 5 0 35px 0;
+}
+
+.container .contact{
+    font-size: 15px;
+}
+
+.container .datos{
+    width: 100%;
+    overflow: hidden;
+}
+
+input[type="text"] {
+    background-color: lightgray;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  

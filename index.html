@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENERADOR DE QR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8bf23f1018.js" crossorigin="anonymous"></script> 
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <header>INFO DEL CONTACTO</header>
+        <br>
+        <div class="contact">
+            <div class="user fas fa-user fa-2xl"></div>
+        </div>
+        <br>
+        <form action="" id="contacto" class="contacto">
+            <div class="datos">
+                <div class="titulo">Nombre</div>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="datos">
+                <div class="titulo">Apellido</div>
+                <input type="text" name="apellido" id="apellido">
+            </div>
+            <div class="datos">
+                <div class="titulo">Telefono</div>
+                <input type="text" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX">
+            </div>
+            <button type="submit" id="contacto">Crear Codigo QR</button> 
+        </form>
+        <br>
+        <div id="qr-code"></div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    </div>
+</body>
+</html>
